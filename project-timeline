@@ -1,0 +1,40 @@
+# Project Timeline
+
+## Phase 1 — Planning & Design (Sep 2026)
+- [x] Define project scope and goals
+- [x] Write README and design doc
+- [ ] Order/confirm all components
+- [ ] Review INA219 datasheet and I2C protocol
+
+## Phase 2 — Hardware Build (Oct 2026)
+- [ ] Breadboard the INA219 → Pico 2W circuit
+- [ ] Verify I2C communication (basic read test)
+- [ ] Wire LED bar graph, status LED, buzzer, button, potentiometer
+- [ ] Test each component individually
+- [ ] Take wiring photos for docs
+
+## Phase 3 — Firmware (Nov 2026)
+- [ ] MicroPython script: read INA219, compute power
+- [ ] Drive LED bar graph based on power level
+- [ ] Buzzer alert when threshold exceeded
+- [ ] Potentiometer sets threshold dynamically
+- [ ] Push button cycles display modes
+- [ ] Send data over USB serial to laptop
+
+## Phase 4 — Dashboard (Dec 2026–Jan 2027)
+- [ ] Python script: read serial, log to CSV
+- [ ] Live power graph (matplotlib or similar)
+- [ ] Session summary: total energy, peak power, CO2e estimate
+- [ ] Run test loads (Pi idle, Pi stress, USB lamp, Pico workloads)
+- [ ] 3 trials per load, 60s each
+
+## Phase 5 — Analysis & Presentation (Jan–Feb 2027)
+- [ ] Compare energy across workloads
+- [ ] Write up findings
+- [ ] Final README update with results, photos, graphs
+- [ ] Prepare class presentation / demo
+
+## Stretch Goals
+- [ ] Real-time Ontario grid carbon intensity instead of average
+- [ ] OLED display on the Pico showing live stats
+- [ ] Web dashboard instead of local matplotlib
