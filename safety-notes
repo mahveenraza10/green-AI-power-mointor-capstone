@@ -1,1 +1,5 @@
-
+- **Never connect this circuit to mains (wall) voltage.** The entire project operates at extra-low DC voltage (5V USB).
+- **Do not cut cables.** Use manufactured USB breakout boards only.
+- **USB-C Power Delivery is out of scope.** USB-C PD can negotiate up to 48V/240W, exceeding the INA219's range and breadboard capacity. Stick to standard 5V USB-A loads.
+- **Separate power paths.** The Pico must be powered independently from the load under test.
+- **Resistor calibration loads will get warm.** Low-value resistors dissipating power at 5V generate heat. Don't leave them connected for extended periods. 220Ω at 5V dissipates ~114 mW which is fine. Don't go below 100Ω (250 mW at 5V).
